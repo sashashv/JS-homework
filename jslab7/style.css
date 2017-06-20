@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    background: url("images/LCCB6.jpg") repeat;
+    font-size: 18px;
+    font-family: 'OpenSansLight', sans-serif;
+}
+.wrapper-form{
+    width: 315px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, .3);
+    padding: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+ }
+.wrapper-form form>div{
+    margin-bottom: 10px;
+}
+.wrapper-form .title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.wrapper-form form label{
+    min-width: 80px;
+    display: inline-block;
+}
+.wrapper-form form input{
+    font-size: 16px;
+    /*height: 22px;*/
+    width: 220px;
+    padding-left: 5px;
+}
+.wrapper-form form input[type="text"], input[type="email"], input[type="number"]{
+    height: 22px;
+}
+.wrapper-form form select{
+    font-size: 16px;
+    height: 24px;
+    width: 225px;
+    background-color: #ffffff;
+    font-family: 'OpenSansLight', sans-serif;
+}
+.wrapper-form form .radio span{
+    vertical-align: top;
+}
+.wrapper-form form .radio .in-block{
+    display: inline-block;
+}
+.wrapper-form form .radio .in-block label{
+    display: block;
+}
+.wrapper-form form .radio .in-block label:not(:last-child){
+    margin-bottom: 8px;
+}
+.wrapper-form form input[type='radio'], .wrapper-form form [type="checkbox"]{
+    width: 15px;
+}
+.wrapper-form form .checkbox .skills{
+    margin-bottom: 10px;
+}
+.wrapper-form form .checkbox label:not(:last-child){
+    margin-right: 13px;;
+}
+.wrapper-form form .submit{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.wrapper-form form input[type="submit"]{
+    background-color: rgba(0, 0, 0, .7);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 20px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, .8);
+    outline: none;
+}
+.wrapper-form form input[type="submit"]:hover{
+    text-shadow: -1px 1px 3px #fff;
+    -webkit-box-shadow: 0 0 11px 3px #fff;
+    -moz-box-shadow: 0 0 11px 3px #fff;
+    box-shadow: 0 0 11px 3px #fff;
+    cursor: pointer;
+}
+.error-message{
+    color: red;
+    margin-left: 85px;
+}
+.error input{
+    border: 1px solid red;
+}

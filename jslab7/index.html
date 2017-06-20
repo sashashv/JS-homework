@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper-form">
+    <h1 class="title">Registration Form</h1>
+    <form action="post" name="survey" novalidate>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" maxlength="20" autocomplete="off" placeholder="Your Name">
+        </div>
+        <div>
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" id="surname" maxlength="30" autocomplete="off" placeholder="Your Surname">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="off" placeholder="your@email.com">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="16" max="100" value="16" autocomplete="off">
+        </div>
+        <div>
+            <label for="salary">Salary:</label>
+            <select name="salary" id="salary">
+                <option value=""> &lt 1000$</option>
+                <option value="">1000-2000$</option>
+                <option value="">&gt 2000$</option>
+            </select>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" maxlength='9' autocomplete="off" placeholder="xxx-xx-xx">
+        </div>
+        <div class="radio">
+            <span>Gender:</span>
+            <div class="in-block">
+                <label><input type="radio" name="gender" checked>Male</label>
+                <label><input type="radio" name="gender">Female</label>
+                <label><input type="radio" name="gender">Don't know</label>
+            </div>
+        </div>
+        <div class="checkbox">
+            <div class="skills">What skills do you have?</div>
+                <label><input type="checkbox" name="skills" checked>HTML/CSS</label>
+                <label><input type="checkbox" name="skills">JavaScript</label>
+                <label><input type="checkbox" name="skills">Python</label>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
