@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    font-size: 18px;
+    font-family: 'OpenSansLight', sans-serif;
+    color: #2f2f2f;
+}
+.wrapper{
+    width: 600px;
+    margin: 80px auto 0;
+}
+form {
+    margin-bottom: 20px;
+}
+form label input{
+    width: 280px;
+    margin: 0 20px;
+    border: 1px solid #a9a9a9;
+    padding: 3px 10px;
+    color: #2f4f4f;
+    background-color: #b0c4de;
+    outline: none;
+}
+form label input:focus {
+    -webkit-box-shadow: 0 0 11px 1px #2f4f4f;
+    -moz-box-shadow: 0 0 11px 1px #2f2f2f;
+    box-shadow: 0 0 11px 1px #2f2f2f;
+}
+form label input:-webkit-autofill{
+    color: #2f4f4f;
+    background-color: #b0c4de;
+}
+form button{
+    font-size: 16px;
+    width: 120px;
+    background-color: #b0c4de;
+    color: #2f4f4f;
+    border: 1px solid #a9a9a9;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+}
+form button:hover{
+    -webkit-box-shadow: 0 0 11px 1px #2f4f4f;
+    -moz-box-shadow: 0 0 11px 1px #2f2f2f;
+    box-shadow: 0 0 11px 1px #2f2f2f;
+}
+
+#container, #weather {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+#weather div:not(:last-child) {
+    margin-bottom: 23px;
+}
+#icon, #description{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
